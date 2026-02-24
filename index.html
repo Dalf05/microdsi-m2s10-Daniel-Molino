@@ -1,13 +1,77 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Google AI Studio App</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
-</html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MicroDSI · M2-S10</title>
+    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="active">Inicio</a>
+        <a href="feed.html">Feed</a>
+        <a href="pista.htm">Pistas</a>
+        <a href="lab.html">Lab</a>
+    </nav>
 
+    <main class="container">
+        <header class="hero">
+            <span class="badge">Módulo 2 · Sesión 10</span>
+            <h1>Modo <span class="italic">“Mapa Mental”</span>: <br>desbloquea un proceso candidato 🎯</h1>
+            <p class="subtitle">Hoy vas a convertir el caos en claridad: inventario → priorización → SIPOC. Avanza por tarjetas rápidas, luego resuelve un caso guiado, y termina con tu entregable en el Lab.</p>
+            
+            <div class="hero-actions">
+                <a href="feed.html" class="btn btn-primary">🚀 Empezar por el Feed</a>
+                <a href="pista.htm" class="btn btn-secondary">🧩 Ir a Pistas</a>
+                <a href="lab.html" class="btn btn-secondary">🧪 Saltar al Lab</a>
+            </div>
+        </header>
+
+        <section class="guide-section">
+            <h2>Cómo jugar (sin perder tiempo)</h2>
+            <div class="steps">
+                <div class="step">
+                    <span class="step-num">1</span>
+                    <div class="step-content">
+                        <h3>Feed</h3>
+                        <p>Marca lo importante y define el alcance.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <span class="step-num">2</span>
+                    <div class="step-content">
+                        <h3>Pistas</h3>
+                        <p>Completa el caso del track que elijas para ganar contexto.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <span class="step-num">3</span>
+                    <div class="step-content">
+                        <h3>Lab</h3>
+                        <p>Pega tu inventario, tu priorización y tu SIPOC. Exporta y listo.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="rules-section">
+            <h3>Reglas rápidas</h3>
+            <ul>
+                <li>• Un proceso L1 = verbo + objeto.</li>
+                <li>• Elige con Impacto / Esfuerzo / Riesgo.</li>
+                <li>• SIPOC con 4–6 pasos.</li>
+                <li>• Si no hay dato, usa un supuesto y márcalo como tal.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>MicroDSI · M2-S10 · 2026</p>
+    </footer>
+
+    <script src="assets/app.js"></script>
+</body>
+</html>

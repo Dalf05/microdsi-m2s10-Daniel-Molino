@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MicroDSI · Lab</title>
+    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html">Inicio</a>
+        <a href="feed.html">Feed</a>
+        <a href="pista.htm">Pistas</a>
+        <a href="lab.html" class="active">Lab</a>
+    </nav>
+
+    <main class="container">
+        <header class="page-header lab-header">
+            <div>
+                <h1>🧪 Laboratorio</h1>
+                <p>Aquí se fabrica el entregable. Escribe rápido, pero deja huella.</p>
+            </div>
+            <button id="export-btn" class="btn btn-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+                Exportar Markdown
+            </button>
+        </header>
+
+        <div class="lab-sections">
+            <!-- Section 1: Inventory -->
+            <section class="lab-section">
+                <div class="section-header">
+                    <h2>1) Inventario (L1) — “Verbo + Objeto”</h2>
+                    <button id="add-inventory" class="btn-icon">+</button>
+                </div>
+                <div id="inventory-list" class="input-list">
+                    <!-- Inventory items will be injected here -->
+                </div>
+            </section>
+
+            <!-- Section 2: Prioritization -->
+            <section class="lab-section">
+                <div class="section-header">
+                    <h2>2) Priorización — Top 5</h2>
+                    <button id="add-prioritization" class="btn-icon">+</button>
+                </div>
+                <div id="prioritization-list" class="prioritization-list">
+                    <!-- Prioritization items will be injected here -->
+                </div>
+            </section>
+
+            <!-- Section 3: SIPOC -->
+            <section class="lab-section">
+                <h2>3) SIPOC — el “contrato”</h2>
+                <div class="sipoc-grid">
+                    <div class="input-group">
+                        <label>Suppliers (Proveedores)</label>
+                        <textarea id="sipoc-suppliers" placeholder="¿Quién entrega la información?"></textarea>
+                    </div>
+                    <div class="input-group">
+                        <label>Inputs (Entradas)</label>
+                        <textarea id="sipoc-inputs" placeholder="¿Qué se necesita para empezar?"></textarea>
+                    </div>
+                    <div class="input-group">
+                        <label>Process (Proceso)</label>
+                        <textarea id="sipoc-process" placeholder="4-6 pasos clave..."></textarea>
+                    </div>
+                    <div class="input-group">
+                        <label>Outputs (Salidas)</label>
+                        <textarea id="sipoc-outputs" placeholder="¿Qué se obtiene al final?"></textarea>
+                    </div>
+                    <div class="input-group">
+                        <label>Customers (Clientes)</label>
+                        <textarea id="sipoc-customers" placeholder="¿Quién recibe el resultado?"></textarea>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 4: AI Log -->
+            <section class="lab-section ai-log-section">
+                <h2>AI Log (Evidencia)</h2>
+                <div class="ai-log-grid">
+                    <div class="input-group">
+                        <label>Objetivo del Prompt</label>
+                        <textarea id="ai-objective" placeholder="¿Qué querías conseguir?"></textarea>
+                    </div>
+                    <div class="input-group">
+                        <label>Prompt Usado</label>
+                        <textarea id="ai-prompt" placeholder="Copia aquí tu prompt..."></textarea>
+                    </div>
+                    <div class="input-group">
+                        <label>Qué Devolvió</label>
+                        <textarea id="ai-result" placeholder="Resumen de la respuesta..."></textarea>
+                    </div>
+                    <div class="input-group">
+                        <label>Qué Cambié Yo</label>
+                        <textarea id="ai-changes" placeholder="Tus correcciones..."></textarea>
+                    </div>
+                    <div class="input-group">
+                        <label>Qué Verifiqué</label>
+                        <textarea id="ai-verification" placeholder="Tus comprobaciones..."></textarea>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="assets/app.js"></script>
+</body>
+</html>

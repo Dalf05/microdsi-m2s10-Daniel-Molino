@@ -4,11 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite --port=3000 --host=0.0.0.0",
-    "build": "vite build",
-    "preview": "vite preview",
-    "clean": "rm -rf dist",
-    "lint": "tsc --noEmit"
+    "dev": "tsx server.ts",
+    "build": "echo 'No build step needed for static site'",
+    "preview": "tsx server.ts"
   },
   "dependencies": {
     "@google/genai": "^1.29.0",
